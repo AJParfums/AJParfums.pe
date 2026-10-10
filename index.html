@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJParfums.pe | Fragancias Selectas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">✨ AJParfums.pe ✨</div>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#productos">Fragancias</a>
+            <a href="#contacto">Contacto</a>
+            <span id="abrir-carrito" class="icono-carrito">🛒 Carrito (<span id="contador">0</span>)</span>
+        </nav>
+    </header>
+
+    <!-- VENTANA DEL CARRITO -->
+    <div id="ventana-carrito" class="cerrado">
+        <div class="contenido-carrito">
+            <h3>🛍️ Tu Pedido</h3>
+            <div id="lista-carrito"></div>
+            <div class="total">
+                <span>Subtotal</span>
+                <strong>S/ <span id="precio-total">0.00</span></strong>
+            </div>
+            <p class="envio">🚚 Envío a todo Lima — Disponible</p>
+            <div class="botones-carrito">
+                <button id="vaciar-carrito" class="btn-vaciar">Vaciar carrito</button>
+                <button id="enviar-pedido" class="btn-enviar">Enviar por WhatsApp ✅</button>
+                <button id="cerrar-carrito" class="btn-cerrar">Seguir comprando</button>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <section class="hero">
+            <h1>Fragancias que dejan huella</h1>
+            <p class="subtitulo">Donde te demostramos que oler bien SÍ importa</p>
+            <div class="decoracion">✦ ✦ ✦</div>
+        </section>
+
+        <h2 id="productos" class="titulo-seccion">Nuestras Fragancias</h2>
+        <div class="grid-productos">
+
+            <!-- KHAMRAH CLÁSICO -->
+            <div class="tarjeta-producto">
+                <div class="imagen-contenedor">
+                    <img src="imagenes/khamrah.jpg" alt="Khamrah Clásico">
+                </div>
+                <h3>Khamrah Clásico</h3>
+                <p class="descripcion-perfume">Aroma cálido y envolvente con notas de ámbar, vainilla y especias. Elegante, seductor y de larga duración.</p>
+                <div class="opciones-decant">
+                    <div class="opcion">
+                        <span class="ml">3 ml</span>
+                        <span class="precio">S/ 15.00</span>
+                        <button class="btn-agregar" data-nombre="Khamrah Clásico — 3ml" data-precio="15">Agregar</button>
+                    </div>
+                    <div class="opcion">
+                        <span class="ml">5 ml</span>
+                        <span class="precio">S/ 20.00</span>
+                        <button class="btn-agregar" data-nombre="Khamrah Clásico — 5ml" data-precio="20">Agregar</button>
+                    </div>
+                    <div class="opcion">
+                        <span class="ml">10 ml</span>
+                        <span class="precio">S/ 35.00</span>
+                        <button class="btn-agregar" data-nombre="Khamrah Clásico — 10ml" data-precio="35">Agregar</button>
+                    </div>
+                </div>
+                <p class="frasco-completo">También disponible en frasco completo • Consultar precio</p>
+            </div>
+
+            <!-- HAWAS ICE -->
+            <div class="tarjeta-producto">
+                <div class="imagen-contenedor">
+                    <img src="imagenes/hawas-ice.jpg" alt="Hawas Ice">
+                </div>
+                <h3>Hawas Ice</h3>
+                <p class="descripcion-perfume">Frescura vibrante y cristalina. Notas cítricas, acordes acuáticos y maderas suaves. Limpio, moderno y revitalizante.</p>
+                <div class="opciones-decant">
+                    <div class="opcion">
+                        <span class="ml">3 ml</span>
+                        <span class="precio">S/ 15.00</span>
+                        <button class="btn-agregar" data-nombre="Hawas Ice — 3ml" data-precio="15">Agregar</button>
+                    </div>
+                    <div class="opcion">
+                        <span class="ml">5 ml</span>
+                        <span class="precio">S/ 20.00</span>
+                        <button class="btn-agregar" data-nombre="Hawas Ice — 5ml" data-precio="20">Agregar</button>
+                    </div>
+                    <div class="opcion">
+                        <span class="ml">10 ml</span>
+                        <span class="precio">S/ 35.00</span>
+                        <button class="btn-agregar" data-nombre="Hawas Ice — 10ml" data-precio="35">Agregar</button>
+                    </div>
+                </div>
+                <p class="frasco-completo">También disponible en frasco completo • Consultar precio</p>
+            </div>
+
+        </div>
+    </main>
+
+    <footer id="contacto">
+        <div class="contenedor-footer">
+            <div class="bloque-footer">
+                <h4>✨ AJParfums.pe</h4>
+                <p>Fragancias selectas para quienes saben que el aroma es la firma más personal.</p>
+            </div>
+            <div class="bloque-footer">
+                <h4>Contacto</h4>
+                <p>📍 Lima, Perú</p>
+                <p>📞 <a href="https://wa.me/51939893155" target="_blank">+51 939 893 155</a></p>
+            </div>
+            <div class="bloque-footer">
+                <h4>Síguenos</h4>
+                <p>📷 <a href="https://instagram.com/ajparfums.pe" target="_blank">@ajparfums.pe</a></p>
+            </div>
+        </div>
+        <p class="derechos">© 2025 AJParfums.pe — Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- BOTÓN FLOTANTE DE WHATSAPP -->
+    <a href="https://wa.me/51939893155?text=Hola!%20Quisiera%20información%20sobre%20los%20perfumes%20disponibles" target="_blank" class="whatsapp-flotante" aria-label="Escribir por WhatsApp">
+        <svg viewBox="0 0 24 24" fill="white" width="28" height="28">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.21 3.074.149.198 2.096 3.2 5.077 4.487.709.305 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.56 9.56 0 01-1.51-5.49c0-5.495 4.446-9.94 9.988-9.94 2.64 0 5.122 1.03 6.988 2.898a9.93 9.93 0 012.893 6.994c-.003 5.497-4.45 9.94-9.992 9.94m8.446-18.297A11.816 11.816 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.965L0 24l6.305-1.654a11.882 11.882 0 005.745 1.48h.006c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.446z"/>
+        </svg>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
